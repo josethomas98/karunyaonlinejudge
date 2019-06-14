@@ -1,0 +1,9 @@
+echo "enter the user name "
+read user
+echo "enter the password"
+read pass
+password=`echo -n $pass | md5sum`
+echo "enter email id "
+read email
+echo "INSERT into user(name,pass,status,email) VALUES('$user','$password','teacher','$email');"
+exit
